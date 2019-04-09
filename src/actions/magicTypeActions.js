@@ -9,7 +9,7 @@ import {
 
 // Todo: Load from environemnt.
 //const apiUrl = "http://localhost:3002/api/";
-const apiUrl = "https://immense-shore-91743.herokuapp.com/";
+const apiUrl = "https://immense-shore-91743.herokuapp.com/api";
 
 export const fetchMagicTypes = () => {
 	return (dispatch) => {
