@@ -1,0 +1,18 @@
+// Import my custom variables
+@import "rpgVariables.scss";
+
+// Import Bootstrap and its default variables
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import Bootstrap extension styles
+@import "/bootstrap_ext/buttons";
+
+// Import all other styles
+@import "mixins.scss";
+@import "global.scss";
+@import "transitions.scss";
+@import "availablePoints.scss";
+@import "skill.scss";
+@import "magicType.scss";
+@import "magicTypesContainer.scss";
+@import "movingBackground.scss";

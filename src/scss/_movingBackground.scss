@@ -1,0 +1,16 @@
+.moving-background{
+	@include background-cover();
+	background: url('../images/tallPines.png');
+	height: 100vh;
+	margin-left: -20px;
+	margin-right: -20px;
+	overflow-y: hidden;
+	transition: 2.0s ease translate;
+}
+
+.far-left{
+	transform: translateX("-200px");
+}
+.left{
+	transform: translateX("-100px");
+}

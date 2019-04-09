@@ -1,0 +1,30 @@
+// Custom variables
+$main-font-color:	#dddddd;
+$darkFontColor: #1e1814;
+$textShadow: #0b0b0b;
+
+$button-color: #303030;
+$button-text-color: $main-font-color;
+$button-hover-text-color: white;
+$button-hover-color: lighten($button-color, 3%);
+
+$magic-type-background-color: rgba(#0e0c0c, .85);
+$magic-type-border: #dddddd;
+$magic-type-border-faded: rgba($magic-type-border, .65);
+
+$gold-highlight: #c49209;
+
+$magic-box-highlight: rgb(253, 158, 16);
+
+// Skills colors
+$skills-title-background-color: #432011;
+$skills-title-text-color: $main-font-color;
+
+// Bootstrap variables
+
+$body-bg: black;
+$primary: $magic-type-background-color;
+
+$btn-padding-x: 1.5rem;
+$btn-padding-y: 0.8rem;
+$btn-font-size: 1.4rem;

@@ -1,0 +1,68 @@
+$skillButtonHeight: 34px;
+
+.select-skills-container{
+	color: $darkFontColor;
+	overflow-y:hidden;
+	overflow-x:hidden;
+	background-image: url("../images/parchment.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 530px;
+
+	@include border-image("../images/borderBoards.png", 8);
+
+	h2{
+		font-weight: 600;
+	}
+}
+
+.return-button{
+	margin-top: 40px;
+}
+
+.skill{
+	font-weight: 600;
+	font-size: 1.5rem;
+
+	.points{
+		font-size: 1.5rem;
+		width: 24px;
+		margin: auto;
+		margin-bottom: 0px;
+	}
+}
+
+.increment{
+	background: url("../images/rightArrow.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 34px;
+	height: 20px;
+}
+
+.decrement{
+	background: url("../images/leftArrow.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 34px;
+	height: 20px;
+}
+
+.skill-button{
+	border: none;
+	margin: auto;
+	@include text-shadow();
+
+	&:hover{
+		filter: brightness(120%);
+	}
+	&:active{
+		filter: brightness(80%);
+	}
+	&:focus{
+		outline: 0;
+	}
+}
+
+

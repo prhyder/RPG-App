@@ -1,0 +1,49 @@
+
+
+.magic-type{
+	cursor: pointer;
+	text-align: center;
+	color: white;
+	background-color: $magic-type-background-color;
+
+	margin-bottom: 55px;
+	margin: 30px 15px;
+	padding: 20px;
+
+	min-width: 125px;
+	max-width: 300px;
+	height: 425px;
+
+	border: 1px solid $magic-type-border-faded;
+
+	@media(min-width: 992px) {
+		width: 300px;
+	}
+
+	&.is-selected{
+		background-color: lighten($magic-type-background-color, 3%);
+		border-color: $magic-type-border-faded;
+		box-shadow:
+		0 0 6px rgba($magic-type-border, .45),
+		0 0 12px rgba($magic-box-highlight, .75),
+		0 0 18px rgba($magic-box-highlight, .55),
+		0 0 58px rgba($magic-box-highlight, .45);
+	}
+
+	.name{
+		font-size: 2.1rem;
+		padding-top: 50px;
+		padding-bottom: 20px;
+	}
+
+	.skill-names{
+		margin-top: 15px;
+		text-align: left;
+	}
+}
+
+.magic-type:hover{
+	border-color: $magic-type-border;
+	background-color: lighten($magic-type-background-color, 3%);
+	transition: 0.15s;
+}

@@ -1,0 +1,26 @@
+@mixin translate3d($x, $y, $z) {
+	-webkit-transform: translate3d($x, $y, $z);
+	   -moz-transform: translate3d($x, $y, $z);
+		 -o-transform: translate3d($x, $y, $z);
+			transform: translate3d($x, $y, $z);
+  }
+
+  @mixin background-cover() {
+    -webkit-background-size: cover !important;
+       -moz-background-size: cover !important;
+         -o-background-size: cover !important;
+            background-size: cover !important;
+}
+
+@mixin border-image($url, $width, $outset:4px){ 
+   -webkit-border-image:
+                  url($url)       /* source */
+                  16 /            /* slice */
+                  #{$width}px /   /* width */
+                  #{$outset}             /* outset */
+                  round;          /* repeat */
+}
+
+@mixin text-shadow($hOffset : -2px, $vOffset: 2px, $radius: 2px, $color: $textShadow){
+   text-shadow: $hOffset $vOffset $radius $color;
+}
