@@ -12,8 +12,7 @@ import {
 	SKILL_LIST_LOADED
 } from "../constants/ActionTypes";
 
-//const apiUrl = "http://localhost:3002/api/";
-const apiUrl = "https://immense-shore-91743.herokuapp.com/api/";
+const apiUrl = process.env.REACT_APP_RPG_API_URL;
 
 export const magicTypeSelected = (magicTypeId) => {
 	return {

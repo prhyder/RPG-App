@@ -7,9 +7,7 @@ import {
 	FETCH_MAGIC_TYPE_FAILED
 } from "../constants/ActionTypes";
 
-// Todo: Load from environemnt.
-//const apiUrl = "http://localhost:3002/api/";
-const apiUrl = "https://immense-shore-91743.herokuapp.com/api/";
+const apiUrl = process.env.REACT_APP_RPG_API_URL;
 
 export const fetchMagicTypes = () => {
 	return (dispatch) => {
